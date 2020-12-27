@@ -12,13 +12,35 @@ int main() {
     return 1;  // returning a positive int means an error occurred
   }
 
-  SDL_Window *window = SDL_CreateWindow("Particle Fire Simulation", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, SCREEN_WIDTH, SCREEN_HEIGHT, SDL_WINDOW_SHOWN);
+  // Main window
+  SDL_Window *window = SDL_CreateWindow("Fire Particle Simulation", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, SCREEN_WIDTH, SCREEN_HEIGHT, SDL_WINDOW_SHOWN);
 
   // Check that the window was successfully created
-  if (window == NULL) {
+  if (window == NULL || window == nullptr) {
     // In the case that the window could not be made...
     printf("Could not create window: %s\n", SDL_GetError());
+    SDL_Quit();
     return 2;  // returning a positive int means an error occurred
+  }
+
+  // Renderer object
+  SDL_Renderer *renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_PRESENTVSYNC);  // index: the index of the rendering driver to initialize, or -1 to initialize the first driver supporting the requested flags; flags: SDL_RENDERER_PRESENTVSYNC – present is synchronized with the refresh rate (it helps prevent rendering at the time when screen is rendering)
+  SDL_Texture *texture = SDL_CreateTexture(renderer, SDL_PIXELFORMAT_RGBA8888, SDL_TEXTUREACCESS_STATIC, SCREEN_WIDTH, SCREEN_HEIGHT);  // format (2nd arg) is a number of possible constants (enum), depending on how many bites you want to represent one pixel; SDL_PIXELFORMAT_RGBA8888 uses one byte for each pixel. Access (3rd arg) is the way we are writing to the texture
+
+  // Check if renderer is absent
+  if (renderer == NULL || renderer == nullptr) {
+    printf("Could not create renderer: %s\n", SDL_GetError());
+    SDL_DestroyWindow(window);
+    SDL_Quit();
+    return 3;
+  }
+  // Check if texture is absent
+  if (texture == NULL || texture == nullptr) {
+    printf("Could not create texture: %s\n", SDL_GetError());
+    SDL_DestroyRenderer(renderer);
+	  SDL_DestroyWindow(window);
+    SDL_Quit();
+    return 4;
   }
 
   bool quit = false;
@@ -35,7 +57,8 @@ int main() {
       }
     }
   }
-
-  SDL_DestroyWindow(window);
+  SDL_DestroyRenderer(renderer); // Destroy renderer
+  SDL_DestroyTexture(texture); // Destroy texture
+  SDL_DestroyWindow(window);  // Destroy window
   SDL_Quit();
 }

@@ -1,4 +1,4 @@
-# Particle Fire Simulation
+# Fire Particle Simulation
 
 Documentation in progress...
 
