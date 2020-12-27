@@ -1,0 +1,9 @@
+Info & Links:
+
+SDL Tutorials: 
+  - Official docs page (links to external sources): https://wiki.libsdl.org/Tutorials
+  - Actual tutorial: https://www.willusher.io/pages/sdl2/
+
+General:
+  - printf is a C function
+  - struct vs class: by default struct members are public, whereas class members are private
