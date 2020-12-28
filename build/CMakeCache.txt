@@ -140,7 +140,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=Fire-Particles-Simulation
+CMAKE_PROJECT_NAME:STATIC=Particle-Motion-Simulation
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -205,10 +205,10 @@ CMAKE_STRIP:FILEPATH=/usr/bin/strip
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //Value Computed by CMake
-Fire-Particles-Simulation_BINARY_DIR:STATIC=/Users/sk/Workhorse/Programming/Courses/Udemy/C++ John Purcell/Beginner/s8-particle-fire-simulation/build
+Particle-Motion-Simulation_BINARY_DIR:STATIC=/Users/sk/Workhorse/Programming/Courses/Udemy/C++ John Purcell/Beginner/s8-particle-fire-simulation/build
 
 //Value Computed by CMake
-Fire-Particles-Simulation_SOURCE_DIR:STATIC=/Users/sk/Workhorse/Programming/Courses/Udemy/C++ John Purcell/Beginner/s8-particle-fire-simulation
+Particle-Motion-Simulation_SOURCE_DIR:STATIC=/Users/sk/Workhorse/Programming/Courses/Udemy/C++ John Purcell/Beginner/s8-particle-fire-simulation
 
 //The directory containing a CMake configuration file for SDL2.
 SDL2_DIR:PATH=/usr/local/lib/cmake/SDL2

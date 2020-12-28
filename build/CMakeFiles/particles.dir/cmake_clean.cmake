@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/particles.dir/main.cpp.o"
+  "CMakeFiles/particles.dir/screen.cpp.o"
   "particles"
   "particles.pdb"
 )

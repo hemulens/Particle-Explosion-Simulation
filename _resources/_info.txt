@@ -5,5 +5,11 @@ SDL Tutorials:
   - Actual tutorial: https://www.willusher.io/pages/sdl2/
 
 General:
-  - printf is a C function
+  + printf is a C function
   - struct vs class: by default struct members are public, whereas class members are private
+  - memset(): https://www.cplusplus.com/reference/cstring/memset/
+  - Uint32 vs uint32 vs uint32_t
+  - try to imagine new Uint32 *buffer = new Uint32[SCREEN_WIDTH * SCREEN_HEIGHT]. Also try to imagine buffer[30000] = 0xFFFFFFFF;
+  - in for loop, what is the difference btw i++ and ++i
+  - practice using namespaces (e.g. namespace simulation {class Screen() {}}) 
+  
