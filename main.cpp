@@ -14,18 +14,21 @@ int main() {
     std::cout << "Failed initializing Screen" << std::endl;
   }
 
-  bool quit = false;
-  SDL_Event event;
-
   // Main game loop
-  while (!quit) {
+  while (true) {
     // Update particles
     // Draw particles
-    // Check for messages/events (loop through all waiting events and process them)
-    while (SDL_PollEvent(&event)) {
-      if (event.type == SDL_QUIT) {  // Quit event is raised whenever we click "close" on a window
-        quit = true;
+    for (int y = 0; y < Screen::SCREEN_HEIGHT; y++) {
+      for (int x = 0; x < Screen::SCREEN_WIDTH; x++) {
+        screen.setPixel(x, y, 128, 0, 255, 255);
       }
+    }
+    screen.setPixel(400, 300, 255, 255, 255, 255);
+    // Draw screen
+    screen.update();
+    // Check for messages/events (loop through all waiting events and process them)
+    if (!screen.processEvents()) {
+      break;
     }
   }
 

@@ -16,12 +16,6 @@ iostream
 stdio.h
 -
 
-/Users/sk/Workhorse/Programming/Courses/Udemy/C++ John Purcell/Beginner/s8-particle-fire-simulation/screen.cpp
-screen.h
-/Users/sk/Workhorse/Programming/Courses/Udemy/C++ John Purcell/Beginner/s8-particle-fire-simulation/screen.h
-iostream
--
-
 /Users/sk/Workhorse/Programming/Courses/Udemy/C++ John Purcell/Beginner/s8-particle-fire-simulation/screen.h
 SDL.h
 -

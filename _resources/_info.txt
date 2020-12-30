@@ -12,4 +12,5 @@ General:
   - try to imagine new Uint32 *buffer = new Uint32[SCREEN_WIDTH * SCREEN_HEIGHT]. Also try to imagine buffer[30000] = 0xFFFFFFFF;
   - in for loop, what is the difference btw i++ and ++i
   - practice using namespaces (e.g. namespace simulation {class Screen() {}}) 
-  
+  - char vs unsigned char
+  - 2nd example of bit shifting: https://www.hackerrank.com/challenges/prettyprint/problem
