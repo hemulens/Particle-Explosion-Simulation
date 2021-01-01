@@ -1,5 +1,5 @@
 #include <iostream>
-#include <iomanip>
+#include <iomanip>  // ?
 
 // void processColors(std::vector<Uint8> &rgba, Uint32 &color) {
 //     for_each(rgba.begin(), rgba.end() - 1, [&color] (Uint8 c) {
@@ -39,14 +39,6 @@ int main() {
   color += alpha;
 
   std::cout << "Color = " << std::setfill('0') << std::setw(8) << std::hex << color << std::endl;
-  
-  // Experiment with variable sizes
-  std::cout << "Size of unsigned int color = " << sizeof(color) << std::endl;
-  std::cout << "Size of unsigned char red = " << sizeof(red) << std::endl;
-  unsigned char c;
-  std::cout << "Size of unsigned char c = " << sizeof(c) << std::endl;
-  unsigned long l;
-  std::cout << "Size of unsigned long l = " << sizeof(l) << std::endl;
   
   return 0;
 }
