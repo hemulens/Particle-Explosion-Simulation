@@ -11,14 +11,24 @@ SDL.h
 -
 screen.h
 /Users/sk/Workhorse/Programming/Courses/Udemy/C++ John Purcell/Beginner/s8-particle-fire-simulation/screen.h
+swarm.h
+/Users/sk/Workhorse/Programming/Courses/Udemy/C++ John Purcell/Beginner/s8-particle-fire-simulation/swarm.h
 iostream
 -
-stdio.h
+math.h
 -
+stdlib.h
+-
+
+/Users/sk/Workhorse/Programming/Courses/Udemy/C++ John Purcell/Beginner/s8-particle-fire-simulation/particle.h
 
 /Users/sk/Workhorse/Programming/Courses/Udemy/C++ John Purcell/Beginner/s8-particle-fire-simulation/screen.h
 SDL.h
 -
+
+/Users/sk/Workhorse/Programming/Courses/Udemy/C++ John Purcell/Beginner/s8-particle-fire-simulation/swarm.h
+particle.h
+/Users/sk/Workhorse/Programming/Courses/Udemy/C++ John Purcell/Beginner/s8-particle-fire-simulation/particle.h
 
 /usr/local/Cellar/sdl2/2.0.14/include/SDL2/SDL.h
 SDL_main.h

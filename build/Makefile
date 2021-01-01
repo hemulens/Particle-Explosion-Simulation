@@ -170,6 +170,33 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/particles.dir/build.make CMakeFiles/particles.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+particle.o: particle.cpp.o
+
+.PHONY : particle.o
+
+# target to build an object file
+particle.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/particles.dir/build.make CMakeFiles/particles.dir/particle.cpp.o
+.PHONY : particle.cpp.o
+
+particle.i: particle.cpp.i
+
+.PHONY : particle.i
+
+# target to preprocess a source file
+particle.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/particles.dir/build.make CMakeFiles/particles.dir/particle.cpp.i
+.PHONY : particle.cpp.i
+
+particle.s: particle.cpp.s
+
+.PHONY : particle.s
+
+# target to generate assembly for a file
+particle.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/particles.dir/build.make CMakeFiles/particles.dir/particle.cpp.s
+.PHONY : particle.cpp.s
+
 screen.o: screen.cpp.o
 
 .PHONY : screen.o
@@ -197,6 +224,33 @@ screen.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/particles.dir/build.make CMakeFiles/particles.dir/screen.cpp.s
 .PHONY : screen.cpp.s
 
+swarm.o: swarm.cpp.o
+
+.PHONY : swarm.o
+
+# target to build an object file
+swarm.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/particles.dir/build.make CMakeFiles/particles.dir/swarm.cpp.o
+.PHONY : swarm.cpp.o
+
+swarm.i: swarm.cpp.i
+
+.PHONY : swarm.i
+
+# target to preprocess a source file
+swarm.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/particles.dir/build.make CMakeFiles/particles.dir/swarm.cpp.i
+.PHONY : swarm.cpp.i
+
+swarm.s: swarm.cpp.s
+
+.PHONY : swarm.s
+
+# target to generate assembly for a file
+swarm.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/particles.dir/build.make CMakeFiles/particles.dir/swarm.cpp.s
+.PHONY : swarm.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -209,9 +263,15 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... particle.o"
+	@echo "... particle.i"
+	@echo "... particle.s"
 	@echo "... screen.o"
 	@echo "... screen.i"
 	@echo "... screen.s"
+	@echo "... swarm.o"
+	@echo "... swarm.i"
+	@echo "... swarm.s"
 .PHONY : help
 
 
