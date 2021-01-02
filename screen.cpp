@@ -1,8 +1,6 @@
 #include "screen.h"
 
 #include <iostream>
-#include <vector>
-#include <algorithm>
 
 namespace simulation {
 
@@ -11,6 +9,9 @@ namespace simulation {
                      _texture(NULL),
                      _buffer(NULL) {}
 
+  Screen::~Screen () {
+    delete _buffer;
+  }
 
   bool Screen::init() {
     if (SDL_Init(SDL_INIT_VIDEO) != 0) {
@@ -87,10 +88,9 @@ namespace simulation {
   // Change pixel
   void Screen::setPixel(int x, int y, Uint8 red, Uint8 green, Uint8 blue, Uint8 alpha) {  // TODO: Experiment with references and check top
     // If the pixel is off the screen
-    if (x < 0 || x > SCREEN_WIDTH || y < 0 || y > SCREEN_HEIGHT) {
+    if (x < 0 || x >= SCREEN_WIDTH || y < 0 || y >= SCREEN_HEIGHT) {
       return;
     }
-    std::vector<Uint8> rgba;
     Uint32 color{0};
     color += red;
     color <<= 8;
@@ -116,9 +116,15 @@ namespace simulation {
   }
 
 
+  // Clear the screen
+  void Screen::clear() {
+    memset(_buffer, 0, SCREEN_WIDTH * SCREEN_HEIGHT * sizeof(Uint32));  // _buffer gets cleared because the 2nd value is 0
+  }
+
+
   // Freeing memory and quitting SDL before the program ends
   void Screen::close() {
-    delete [] _buffer;
+    // delete [] _buffer;  // moved to Screen class destructor instead
     SDL_DestroyRenderer(_renderer); // Destroy renderer
     SDL_DestroyTexture(_texture); // Destroy texture
     SDL_DestroyWindow(_window);  // Destroy window

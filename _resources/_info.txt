@@ -16,4 +16,5 @@ General:
   - 2nd example of bit shifting (from Patrick): https://www.hackerrank.com/challenges/prettyprint/problem
   - how sine and cosine work in maths
   - why make class destructor virtual (virtual ~Particle()) ?  https://www.geeksforgeeks.org/virtual-destructor/
-
+  - how to compile in the debug mode using CMake?
+  

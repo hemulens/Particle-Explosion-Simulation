@@ -11,14 +11,12 @@ using namespace simulation;
 
 int main() {
 
-  srand(time(NULL));
+  srand(time(NULL));  // init randomizer
 
   Screen screen;
-
   if (!screen.init()) {
     std::cout << "Failed initializing Screen" << std::endl;
   }
-
   Swarm swarm;
   int elapsed;
   unsigned char red;
@@ -28,14 +26,17 @@ int main() {
 
   // Main "game loop"
   while (true) {
-    // Update particles
-    // Draw particles
     elapsed = SDL_GetTicks();  // returns the number of milliseconds since the program started
+    // Clear the screen
+    screen.clear();
+    // Update particles
+    swarm.update();
+    // Draw particles
     red = (unsigned char)((sin(elapsed * 0.0001) + 1) * 128);  // sin(x) takes a number and returns a value in the range on -1 to +1; * 0.001 makes range shorter to ensure a smooth transition. Converted from double to int to discard the decimal remainder to return max of 256. Converted to char again: (unsigned char)(...) makes sure we are doing a cast (i.e. discarding remainder of decimal points). Change speed: 0.001 => 0.0001
     green = (unsigned char)((sin(elapsed * 0.0002) + 1) * 128);
     blue = (unsigned char)((sin(elapsed * 0.0003) + 1) * 128);
 
-    const Particle *const particles = swarm.getParticles();  
+    const Particle *const particles = swarm.getParticles();  // TODO: init variable outside the loop and reassign values inside the loop?
     for (int i = 0; i < Swarm::NPARTICLES; i++) {
       Particle particle = particles[i];
       // Mapping particles
