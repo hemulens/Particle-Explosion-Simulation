@@ -37,11 +37,11 @@ int main() {
     blue = (unsigned char)((sin(elapsed * 0.0003) + 1) * 128);
 
     const Particle *const particles = swarm.getParticles();  // TODO: init variable outside the loop and reassign values inside the loop?
+    // Map particles
     for (int i = 0; i < Swarm::NPARTICLES; i++) {
       Particle particle = particles[i];
-      // Mapping particles
       int x = (particle._x + 1) / 2 * Screen::SCREEN_WIDTH; 
-      int y = (particle._y + 1) / 2 * Screen::SCREEN_HEIGHT;
+      int y = particle._y * Screen::SCREEN_WIDTH / 2 + Screen::SCREEN_HEIGHT / 2;
       screen.setPixel(x, y, red, green, blue, alpha); 
     }
     

@@ -1,25 +1,39 @@
 #include "particle.h"
+#include <math.h>
 #include <stdlib.h>
 
 namespace simulation {
 
-  Particle::Particle() : _x(((2.0 * rand()) / RAND_MAX) - 1),  // normalized to -1 – +1 on Cartesian coordinates
-                         _y(((2.0 * rand()) / RAND_MAX) - 1), 
-                         _xSpeed(0.001 * (((2.0 * rand())/RAND_MAX) - 1)),  // RAND_MAX is a large const int; rand() returns a random int value from 0
-                         _ySpeed(0.001 * (((2.0 * rand())/RAND_MAX) - 1)) {}
+  Particle::Particle() : _x(0),  // normalized to -1 – +1 on Cartesian coordinates
+                         _y(0),
+                         _direction((2 * M_PI * rand())/RAND_MAX),  // direction (angle) is measured in radians, not in 360 degrees, but in 2*PI, i.e. 0 – 6.3
+                         _speed((0.001 * rand())/RAND_MAX) {}
+
+  // Old Particle init list for spontaneous particle motion
+  // _x(((2.0 * rand()) / RAND_MAX) - 1),  // normalized to -1 – +1 on Cartesian coordinates
+  // _y(((2.0 * rand()) / RAND_MAX) - 1), 
+  // _xSpeed(0.001 * (((2.0 * rand())/RAND_MAX) - 1)),  // RAND_MAX is a large const int; rand() returns a random int value from 0
+  // _ySpeed(0.001 * (((2.0 * rand())/RAND_MAX) - 1)) {}
 
   Particle::~Particle() {}
 
   void Particle::update() {
-    _x += _xSpeed;
-    _y += _ySpeed;
-    // Reverse the speed (and hence direction) if reaches end of the screen
-    if (_x <= -1.0 || _x >= 1.0) {
-      _xSpeed = -_xSpeed;
-    }
-    if (_y <= -1.0 || _y >= 1.0) {
-      _ySpeed = -_ySpeed;
-    }
+    // Circular motion pattern
+    double xSpeed = _speed * cos(_direction);
+    double ySpeed = _speed * sin(_direction);
+    _x += xSpeed;
+    _y += ySpeed;
+
+    // Old Particle update method for spontaneous particle motion
+    // _x += _xSpeed;
+    // _y += _ySpeed;
+    // // Reverse the speed (and hence direction) if reaches end of the screen
+    // if (_x <= -1.0 || _x >= 1.0) {
+    //   _xSpeed = -_xSpeed;
+    // }
+    // if (_y <= -1.0 || _y >= 1.0) {
+    //   _ySpeed = -_ySpeed;
+    // }
   }
 
 } /* namespace simulation */
