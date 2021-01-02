@@ -7,7 +7,7 @@ namespace simulation {
   Particle::Particle() : _x(0),  // normalized to -1 – +1 on Cartesian coordinates
                          _y(0),
                          _direction((2 * M_PI * rand())/RAND_MAX),  // direction (angle) is measured in radians, not in 360 degrees, but in 2*PI, i.e. 0 – 6.3
-                         _speed((0.001 * rand())/RAND_MAX) {}
+                         _speed((0.0001 * rand())/RAND_MAX) {}
 
   // Old Particle init list for spontaneous particle motion
   // _x(((2.0 * rand()) / RAND_MAX) - 1),  // normalized to -1 – +1 on Cartesian coordinates
@@ -17,12 +17,12 @@ namespace simulation {
 
   Particle::~Particle() {}
 
-  void Particle::update() {
+  void Particle::update(int interval) {
     // Circular motion pattern
-    double xSpeed = _speed * cos(_direction);
-    double ySpeed = _speed * sin(_direction);
-    _x += xSpeed;
-    _y += ySpeed;
+    _xSpeed = _speed * cos(_direction);
+    _ySpeed = _speed * sin(_direction);
+    _x += _xSpeed * interval;  // making sure the amount the particle is moved by is proportional to the amount of time sinsce we last moved the particle, thus ensuring it will move at a similar speed on slower systems.
+    _y += _ySpeed * interval;
 
     // Old Particle update method for spontaneous particle motion
     // _x += _xSpeed;

@@ -30,7 +30,7 @@ int main() {
     // Clear the screen
     screen.clear();
     // Update particles
-    swarm.update();
+    swarm.update(elapsed);
     // Draw particles
     red = (unsigned char)((sin(elapsed * 0.0001) + 1) * 128);  // sin(x) takes a number and returns a value in the range on -1 to +1; * 0.001 makes range shorter to ensure a smooth transition. Converted from double to int to discard the decimal remainder to return max of 256. Converted to char again: (unsigned char)(...) makes sure we are doing a cast (i.e. discarding remainder of decimal points). Change speed: 0.001 => 0.0001
     green = (unsigned char)((sin(elapsed * 0.0002) + 1) * 128);
