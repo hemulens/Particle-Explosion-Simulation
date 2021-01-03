@@ -3,6 +3,11 @@ Info & Links:
 SDL Tutorials: 
   - Official docs page (links to external sources): https://wiki.libsdl.org/Tutorials
   - Actual tutorial: https://www.willusher.io/pages/sdl2/
+  
+Converting Video to GIF  
+  - Video to GIF converter: https://ezgif.com/video-to-gif
+  - Video to GIF via VLC: https://www.videoproc.com/troubleshoot-vlc/how-to-create-gif-from-video-in-vlc.htm
+  - https://gist.github.com/harunawaizumi/958f4a613f626dbd22f7840245cdd1cf
 
 General:
   + printf is a C function
