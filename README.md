@@ -30,10 +30,7 @@ In progress...
     * An alternative to conventional gcc/g++ on Mac: use llvm-gcc (`export CC=/usr/bin/llvm-gcc`) and llvm-g++ (`export CXX=/usr/bin/llvm-g++`)
   * Linux: gcc / g++ is installed by default on most Linux distros
   * Windows: recommend using [MinGW](http://www.mingw.org/)
-* SDL2 >= 2.0.0 ([general installation instructions](https://docs.opencv.org/4.2.0/df/d65/tutorial_table_of_content_introduction.html))
-  * [Mac](https://www.libsdl.org/download-2.0.php)
-  * [Linux](https://www.libsdl.org/download-2.0.php)
-  * [Windows](https://www.libsdl.org/download-2.0.php)
+* SDL2 >= 2.0.0 ([general installation instructions](https://www.libsdl.org/download-2.0.php)) for Mac, Linux and Windows
 
 ## Build Instructions
 
