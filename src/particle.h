@@ -11,6 +11,9 @@ namespace simulation {
 
       double _x;  // particle coordinates on the screen x & y
       double _y;  // double allows moving pixels bit by bit to other pixel slot by rounding numbers
+      
+    private:
+      void init();
       // double _xSpeed;
       // double _ySpeed;
       double _speed;

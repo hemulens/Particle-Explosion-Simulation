@@ -27,8 +27,10 @@ int main() {
   // Main "game loop"
   while (true) {
     elapsed = SDL_GetTicks();  // returns the number of milliseconds since the program started
-    // Clear the screen
-    screen.clear();
+    // // Clear the screen
+    // screen.clear();
+    // Blur the screen
+    screen.boxBlur();
     // Update particles
     swarm.update(elapsed);
     // Draw particles

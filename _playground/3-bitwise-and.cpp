@@ -5,7 +5,7 @@
 #include <iostream>
 
 int main() {
-  // int color{0x12345678};
+  int _color{0x12345678};
   int color{0x123456};  // here, alpha value is missing on purpose (for simplicity)
 
   int example = color & 0xFF0000;  // single & in C++ makes a bitwise comparison; in bits, 0xFF0000 = 111111110000000000000000
@@ -21,7 +21,8 @@ int main() {
   */
 
   // Alternative (system-dependent)
-  unsigned char _red = color >> 16;
+  unsigned char red2 = color >> 16;
+  unsigned char _alpha = _color;
 
   std::cout << std::hex << example << std::endl;
   std::cout << std::hex << (int)red << std::endl;
@@ -30,7 +31,8 @@ int main() {
   
   std::cout << std::endl;
 
-  std::cout << std::hex << (int)_red << std::endl;
+  std::cout << std::hex << (int)red2 << std::endl;
+  std::cout << std::hex << (int)_alpha << std::endl;
 
   return 0;
 }
