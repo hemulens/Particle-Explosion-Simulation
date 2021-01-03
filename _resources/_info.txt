@@ -22,4 +22,5 @@ General:
   - how sine and cosine work in maths
   - why make class destructor virtual (virtual ~Particle()) ?  https://www.geeksforgeeks.org/virtual-destructor/
   - how to compile in the debug mode using CMake?
+  - deleting files untracked in .gitignore: https://stackoverflow.com/questions/25436312/gitignore-not-working
   
