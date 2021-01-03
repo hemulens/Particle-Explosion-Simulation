@@ -4,6 +4,7 @@ An altered version of original [Particle Fire Simulation application by John Pur
 
 ## Project Description
 
+![Screenshot of the project in action](data/particle-explosion-simulation.jpg "Fire Particle Explosion")
 ![Screenshot of the project in action](data/fire-particle-explosion.gif "Fire Particle Explosion")
 ![Screenshot of the project in action](data/fire-particle-implosion.gif "Fire Particle Implosion")
 
