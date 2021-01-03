@@ -77,72 +77,72 @@ include CMakeFiles/particles.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/particles.dir/flags.make
 
-CMakeFiles/particles.dir/main.cpp.o: CMakeFiles/particles.dir/flags.make
-CMakeFiles/particles.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/sk/Workhorse/Programming/Courses/Udemy/C++ John Purcell/Beginner/s8-particle-fire-simulation/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/particles.dir/main.cpp.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/particles.dir/main.cpp.o -c "/Users/sk/Workhorse/Programming/Courses/Udemy/C++ John Purcell/Beginner/s8-particle-fire-simulation/main.cpp"
+CMakeFiles/particles.dir/src/main.cpp.o: CMakeFiles/particles.dir/flags.make
+CMakeFiles/particles.dir/src/main.cpp.o: ../src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/sk/Workhorse/Programming/Courses/Udemy/C++ John Purcell/Beginner/s8-particle-fire-simulation/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/particles.dir/src/main.cpp.o"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/particles.dir/src/main.cpp.o -c "/Users/sk/Workhorse/Programming/Courses/Udemy/C++ John Purcell/Beginner/s8-particle-fire-simulation/src/main.cpp"
 
-CMakeFiles/particles.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/particles.dir/main.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/sk/Workhorse/Programming/Courses/Udemy/C++ John Purcell/Beginner/s8-particle-fire-simulation/main.cpp" > CMakeFiles/particles.dir/main.cpp.i
+CMakeFiles/particles.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/particles.dir/src/main.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/sk/Workhorse/Programming/Courses/Udemy/C++ John Purcell/Beginner/s8-particle-fire-simulation/src/main.cpp" > CMakeFiles/particles.dir/src/main.cpp.i
 
-CMakeFiles/particles.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/particles.dir/main.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/sk/Workhorse/Programming/Courses/Udemy/C++ John Purcell/Beginner/s8-particle-fire-simulation/main.cpp" -o CMakeFiles/particles.dir/main.cpp.s
+CMakeFiles/particles.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/particles.dir/src/main.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/sk/Workhorse/Programming/Courses/Udemy/C++ John Purcell/Beginner/s8-particle-fire-simulation/src/main.cpp" -o CMakeFiles/particles.dir/src/main.cpp.s
 
-CMakeFiles/particles.dir/screen.cpp.o: CMakeFiles/particles.dir/flags.make
-CMakeFiles/particles.dir/screen.cpp.o: ../screen.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/sk/Workhorse/Programming/Courses/Udemy/C++ John Purcell/Beginner/s8-particle-fire-simulation/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/particles.dir/screen.cpp.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/particles.dir/screen.cpp.o -c "/Users/sk/Workhorse/Programming/Courses/Udemy/C++ John Purcell/Beginner/s8-particle-fire-simulation/screen.cpp"
+CMakeFiles/particles.dir/src/particle.cpp.o: CMakeFiles/particles.dir/flags.make
+CMakeFiles/particles.dir/src/particle.cpp.o: ../src/particle.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/sk/Workhorse/Programming/Courses/Udemy/C++ John Purcell/Beginner/s8-particle-fire-simulation/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/particles.dir/src/particle.cpp.o"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/particles.dir/src/particle.cpp.o -c "/Users/sk/Workhorse/Programming/Courses/Udemy/C++ John Purcell/Beginner/s8-particle-fire-simulation/src/particle.cpp"
 
-CMakeFiles/particles.dir/screen.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/particles.dir/screen.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/sk/Workhorse/Programming/Courses/Udemy/C++ John Purcell/Beginner/s8-particle-fire-simulation/screen.cpp" > CMakeFiles/particles.dir/screen.cpp.i
+CMakeFiles/particles.dir/src/particle.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/particles.dir/src/particle.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/sk/Workhorse/Programming/Courses/Udemy/C++ John Purcell/Beginner/s8-particle-fire-simulation/src/particle.cpp" > CMakeFiles/particles.dir/src/particle.cpp.i
 
-CMakeFiles/particles.dir/screen.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/particles.dir/screen.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/sk/Workhorse/Programming/Courses/Udemy/C++ John Purcell/Beginner/s8-particle-fire-simulation/screen.cpp" -o CMakeFiles/particles.dir/screen.cpp.s
+CMakeFiles/particles.dir/src/particle.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/particles.dir/src/particle.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/sk/Workhorse/Programming/Courses/Udemy/C++ John Purcell/Beginner/s8-particle-fire-simulation/src/particle.cpp" -o CMakeFiles/particles.dir/src/particle.cpp.s
 
-CMakeFiles/particles.dir/particle.cpp.o: CMakeFiles/particles.dir/flags.make
-CMakeFiles/particles.dir/particle.cpp.o: ../particle.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/sk/Workhorse/Programming/Courses/Udemy/C++ John Purcell/Beginner/s8-particle-fire-simulation/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/particles.dir/particle.cpp.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/particles.dir/particle.cpp.o -c "/Users/sk/Workhorse/Programming/Courses/Udemy/C++ John Purcell/Beginner/s8-particle-fire-simulation/particle.cpp"
+CMakeFiles/particles.dir/src/screen.cpp.o: CMakeFiles/particles.dir/flags.make
+CMakeFiles/particles.dir/src/screen.cpp.o: ../src/screen.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/sk/Workhorse/Programming/Courses/Udemy/C++ John Purcell/Beginner/s8-particle-fire-simulation/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/particles.dir/src/screen.cpp.o"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/particles.dir/src/screen.cpp.o -c "/Users/sk/Workhorse/Programming/Courses/Udemy/C++ John Purcell/Beginner/s8-particle-fire-simulation/src/screen.cpp"
 
-CMakeFiles/particles.dir/particle.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/particles.dir/particle.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/sk/Workhorse/Programming/Courses/Udemy/C++ John Purcell/Beginner/s8-particle-fire-simulation/particle.cpp" > CMakeFiles/particles.dir/particle.cpp.i
+CMakeFiles/particles.dir/src/screen.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/particles.dir/src/screen.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/sk/Workhorse/Programming/Courses/Udemy/C++ John Purcell/Beginner/s8-particle-fire-simulation/src/screen.cpp" > CMakeFiles/particles.dir/src/screen.cpp.i
 
-CMakeFiles/particles.dir/particle.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/particles.dir/particle.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/sk/Workhorse/Programming/Courses/Udemy/C++ John Purcell/Beginner/s8-particle-fire-simulation/particle.cpp" -o CMakeFiles/particles.dir/particle.cpp.s
+CMakeFiles/particles.dir/src/screen.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/particles.dir/src/screen.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/sk/Workhorse/Programming/Courses/Udemy/C++ John Purcell/Beginner/s8-particle-fire-simulation/src/screen.cpp" -o CMakeFiles/particles.dir/src/screen.cpp.s
 
-CMakeFiles/particles.dir/swarm.cpp.o: CMakeFiles/particles.dir/flags.make
-CMakeFiles/particles.dir/swarm.cpp.o: ../swarm.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/sk/Workhorse/Programming/Courses/Udemy/C++ John Purcell/Beginner/s8-particle-fire-simulation/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/particles.dir/swarm.cpp.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/particles.dir/swarm.cpp.o -c "/Users/sk/Workhorse/Programming/Courses/Udemy/C++ John Purcell/Beginner/s8-particle-fire-simulation/swarm.cpp"
+CMakeFiles/particles.dir/src/swarm.cpp.o: CMakeFiles/particles.dir/flags.make
+CMakeFiles/particles.dir/src/swarm.cpp.o: ../src/swarm.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/sk/Workhorse/Programming/Courses/Udemy/C++ John Purcell/Beginner/s8-particle-fire-simulation/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/particles.dir/src/swarm.cpp.o"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/particles.dir/src/swarm.cpp.o -c "/Users/sk/Workhorse/Programming/Courses/Udemy/C++ John Purcell/Beginner/s8-particle-fire-simulation/src/swarm.cpp"
 
-CMakeFiles/particles.dir/swarm.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/particles.dir/swarm.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/sk/Workhorse/Programming/Courses/Udemy/C++ John Purcell/Beginner/s8-particle-fire-simulation/swarm.cpp" > CMakeFiles/particles.dir/swarm.cpp.i
+CMakeFiles/particles.dir/src/swarm.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/particles.dir/src/swarm.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/sk/Workhorse/Programming/Courses/Udemy/C++ John Purcell/Beginner/s8-particle-fire-simulation/src/swarm.cpp" > CMakeFiles/particles.dir/src/swarm.cpp.i
 
-CMakeFiles/particles.dir/swarm.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/particles.dir/swarm.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/sk/Workhorse/Programming/Courses/Udemy/C++ John Purcell/Beginner/s8-particle-fire-simulation/swarm.cpp" -o CMakeFiles/particles.dir/swarm.cpp.s
+CMakeFiles/particles.dir/src/swarm.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/particles.dir/src/swarm.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/sk/Workhorse/Programming/Courses/Udemy/C++ John Purcell/Beginner/s8-particle-fire-simulation/src/swarm.cpp" -o CMakeFiles/particles.dir/src/swarm.cpp.s
 
 # Object files for target particles
 particles_OBJECTS = \
-"CMakeFiles/particles.dir/main.cpp.o" \
-"CMakeFiles/particles.dir/screen.cpp.o" \
-"CMakeFiles/particles.dir/particle.cpp.o" \
-"CMakeFiles/particles.dir/swarm.cpp.o"
+"CMakeFiles/particles.dir/src/main.cpp.o" \
+"CMakeFiles/particles.dir/src/particle.cpp.o" \
+"CMakeFiles/particles.dir/src/screen.cpp.o" \
+"CMakeFiles/particles.dir/src/swarm.cpp.o"
 
 # External object files for target particles
 particles_EXTERNAL_OBJECTS =
 
-particles: CMakeFiles/particles.dir/main.cpp.o
-particles: CMakeFiles/particles.dir/screen.cpp.o
-particles: CMakeFiles/particles.dir/particle.cpp.o
-particles: CMakeFiles/particles.dir/swarm.cpp.o
+particles: CMakeFiles/particles.dir/src/main.cpp.o
+particles: CMakeFiles/particles.dir/src/particle.cpp.o
+particles: CMakeFiles/particles.dir/src/screen.cpp.o
+particles: CMakeFiles/particles.dir/src/swarm.cpp.o
 particles: CMakeFiles/particles.dir/build.make
 particles: CMakeFiles/particles.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/sk/Workhorse/Programming/Courses/Udemy/C++ John Purcell/Beginner/s8-particle-fire-simulation/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable particles"

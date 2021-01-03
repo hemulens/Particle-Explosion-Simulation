@@ -143,113 +143,113 @@ particles/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/particles.dir/build.make CMakeFiles/particles.dir/build
 .PHONY : particles/fast
 
-main.o: main.cpp.o
+src/main.o: src/main.cpp.o
 
-.PHONY : main.o
-
-# target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/particles.dir/build.make CMakeFiles/particles.dir/main.cpp.o
-.PHONY : main.cpp.o
-
-main.i: main.cpp.i
-
-.PHONY : main.i
-
-# target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/particles.dir/build.make CMakeFiles/particles.dir/main.cpp.i
-.PHONY : main.cpp.i
-
-main.s: main.cpp.s
-
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/particles.dir/build.make CMakeFiles/particles.dir/main.cpp.s
-.PHONY : main.cpp.s
-
-particle.o: particle.cpp.o
-
-.PHONY : particle.o
+.PHONY : src/main.o
 
 # target to build an object file
-particle.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/particles.dir/build.make CMakeFiles/particles.dir/particle.cpp.o
-.PHONY : particle.cpp.o
+src/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/particles.dir/build.make CMakeFiles/particles.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
 
-particle.i: particle.cpp.i
+src/main.i: src/main.cpp.i
 
-.PHONY : particle.i
+.PHONY : src/main.i
 
 # target to preprocess a source file
-particle.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/particles.dir/build.make CMakeFiles/particles.dir/particle.cpp.i
-.PHONY : particle.cpp.i
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/particles.dir/build.make CMakeFiles/particles.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
 
-particle.s: particle.cpp.s
+src/main.s: src/main.cpp.s
 
-.PHONY : particle.s
+.PHONY : src/main.s
 
 # target to generate assembly for a file
-particle.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/particles.dir/build.make CMakeFiles/particles.dir/particle.cpp.s
-.PHONY : particle.cpp.s
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/particles.dir/build.make CMakeFiles/particles.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
-screen.o: screen.cpp.o
+src/particle.o: src/particle.cpp.o
 
-.PHONY : screen.o
+.PHONY : src/particle.o
 
 # target to build an object file
-screen.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/particles.dir/build.make CMakeFiles/particles.dir/screen.cpp.o
-.PHONY : screen.cpp.o
+src/particle.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/particles.dir/build.make CMakeFiles/particles.dir/src/particle.cpp.o
+.PHONY : src/particle.cpp.o
 
-screen.i: screen.cpp.i
+src/particle.i: src/particle.cpp.i
 
-.PHONY : screen.i
+.PHONY : src/particle.i
 
 # target to preprocess a source file
-screen.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/particles.dir/build.make CMakeFiles/particles.dir/screen.cpp.i
-.PHONY : screen.cpp.i
+src/particle.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/particles.dir/build.make CMakeFiles/particles.dir/src/particle.cpp.i
+.PHONY : src/particle.cpp.i
 
-screen.s: screen.cpp.s
+src/particle.s: src/particle.cpp.s
 
-.PHONY : screen.s
+.PHONY : src/particle.s
 
 # target to generate assembly for a file
-screen.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/particles.dir/build.make CMakeFiles/particles.dir/screen.cpp.s
-.PHONY : screen.cpp.s
+src/particle.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/particles.dir/build.make CMakeFiles/particles.dir/src/particle.cpp.s
+.PHONY : src/particle.cpp.s
 
-swarm.o: swarm.cpp.o
+src/screen.o: src/screen.cpp.o
 
-.PHONY : swarm.o
+.PHONY : src/screen.o
 
 # target to build an object file
-swarm.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/particles.dir/build.make CMakeFiles/particles.dir/swarm.cpp.o
-.PHONY : swarm.cpp.o
+src/screen.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/particles.dir/build.make CMakeFiles/particles.dir/src/screen.cpp.o
+.PHONY : src/screen.cpp.o
 
-swarm.i: swarm.cpp.i
+src/screen.i: src/screen.cpp.i
 
-.PHONY : swarm.i
+.PHONY : src/screen.i
 
 # target to preprocess a source file
-swarm.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/particles.dir/build.make CMakeFiles/particles.dir/swarm.cpp.i
-.PHONY : swarm.cpp.i
+src/screen.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/particles.dir/build.make CMakeFiles/particles.dir/src/screen.cpp.i
+.PHONY : src/screen.cpp.i
 
-swarm.s: swarm.cpp.s
+src/screen.s: src/screen.cpp.s
 
-.PHONY : swarm.s
+.PHONY : src/screen.s
 
 # target to generate assembly for a file
-swarm.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/particles.dir/build.make CMakeFiles/particles.dir/swarm.cpp.s
-.PHONY : swarm.cpp.s
+src/screen.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/particles.dir/build.make CMakeFiles/particles.dir/src/screen.cpp.s
+.PHONY : src/screen.cpp.s
+
+src/swarm.o: src/swarm.cpp.o
+
+.PHONY : src/swarm.o
+
+# target to build an object file
+src/swarm.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/particles.dir/build.make CMakeFiles/particles.dir/src/swarm.cpp.o
+.PHONY : src/swarm.cpp.o
+
+src/swarm.i: src/swarm.cpp.i
+
+.PHONY : src/swarm.i
+
+# target to preprocess a source file
+src/swarm.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/particles.dir/build.make CMakeFiles/particles.dir/src/swarm.cpp.i
+.PHONY : src/swarm.cpp.i
+
+src/swarm.s: src/swarm.cpp.s
+
+.PHONY : src/swarm.s
+
+# target to generate assembly for a file
+src/swarm.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/particles.dir/build.make CMakeFiles/particles.dir/src/swarm.cpp.s
+.PHONY : src/swarm.cpp.s
 
 # Help Target
 help:
@@ -260,18 +260,18 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... particles"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
-	@echo "... particle.o"
-	@echo "... particle.i"
-	@echo "... particle.s"
-	@echo "... screen.o"
-	@echo "... screen.i"
-	@echo "... screen.s"
-	@echo "... swarm.o"
-	@echo "... swarm.i"
-	@echo "... swarm.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
+	@echo "... src/particle.o"
+	@echo "... src/particle.i"
+	@echo "... src/particle.s"
+	@echo "... src/screen.o"
+	@echo "... src/screen.i"
+	@echo "... src/screen.s"
+	@echo "... src/swarm.o"
+	@echo "... src/swarm.i"
+	@echo "... src/swarm.s"
 .PHONY : help
 
 

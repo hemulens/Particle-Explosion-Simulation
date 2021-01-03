@@ -10,5 +10,15 @@ project(Particle-Motion-Simulation)
 find_package(SDL2 REQUIRED)
 include_directories(${SDL2_INCLUDE_DIRS})
 
-add_executable(particles main.cpp screen.cpp particle.cpp swarm.cpp)
+# INCLUDE ALL .CPP FILES FROM SRC DIRECTORY
+file(GLOB project_SRCS src/*.cpp)
+
+add_executable(particles ${project_SRCS})
 target_link_libraries(particles ${SDL2_LIBRARIES})
+
+
+
+
+
+# IF FILES ARE IN MAIN PROJECT FOLDER (NOT SRC)
+# add_executable(particles main.cpp screen.cpp particle.cpp swarm.cpp)

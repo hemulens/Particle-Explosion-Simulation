@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/particles.dir/main.cpp.o"
-  "CMakeFiles/particles.dir/particle.cpp.o"
-  "CMakeFiles/particles.dir/screen.cpp.o"
-  "CMakeFiles/particles.dir/swarm.cpp.o"
+  "CMakeFiles/particles.dir/src/main.cpp.o"
+  "CMakeFiles/particles.dir/src/particle.cpp.o"
+  "CMakeFiles/particles.dir/src/screen.cpp.o"
+  "CMakeFiles/particles.dir/src/swarm.cpp.o"
   "particles"
   "particles.pdb"
 )
